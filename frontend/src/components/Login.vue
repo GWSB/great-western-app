@@ -79,9 +79,7 @@ export default {
         }
       }).then(response => {
         this.token = response.data.token
-        if (response.data.success) {
-          this.$router.push('/home')
-        }
+        this.$router.push('/home')
       }).catch(error => {
         console.log(error)
       })
